@@ -1,0 +1,26 @@
+CustomerID,Name,Segment,Region,Value
+C001,John Doe,Premium,Northeast,5000
+C002,Jane Smith,Standard,Southeast,2500
+C003,Bob Johnson,Basic,Midwest,1200
+C004,Alice Williams,Premium,West,6500
+C005,Charlie Brown,Standard,Southwest,2800
+C006,Diana Prince,Premium,Northeast,7200
+C007,Evan Davis,Basic,Southeast,1500
+C008,Fiona Green,Standard,Midwest,3200
+C009,George Miller,Premium,West,5800
+C010,Hannah Lee,Basic,Northeast,950
+C011,Ian Hall,Standard,Southwest,2900
+C012,Julia White,Premium,Southeast,6800
+C013,Kevin Black,Basic,Midwest,1100
+C014,Luna Martinez,Standard,West,3100
+C015,Marcus Taylor,Premium,Northeast,5500
+C016,Natalie Anderson,Basic,Southwest,1300
+C017,Oliver Thomas,Standard,Southeast,2700
+C018,Piper Jackson,Premium,Midwest,6200
+C019,Quinn White,Basic,Northeast,1400
+C020,Rachel Young,Standard,West,3400
+C021,Samuel King,Premium,Southwest,5900
+C022,Tanya Scott,Basic,Southeast,1600
+C023,Ulysses Green,Standard,Midwest,2600
+C024,Vivian Adams,Premium,West,7100
+C025,William Clark,Basic,Northeast,1050

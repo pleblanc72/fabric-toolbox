@@ -45,6 +45,28 @@ Before running the Modern Evaluator performance test, confirm everything is in p
 
 ---
 
+## About Query Folding & CSV Connectors
+
+**Note on Query Folding:**
+
+The `Customers` and `Orders` queries will **not fold** — this is expected behavior, not a limitation:
+
+- **CSV files are text-based** with no native filtering capability at the source
+- When loading from a URL via `Csv.Document()`, the **entire file is fetched** into memory
+- All transformations (type changes, filters, etc.) happen **in-memory**, not at the source
+- Query folding is most effective with databases (SQL Server, OData) where operations can be pushed to the server
+
+**Where the Modern Evaluator Benefit Shows:**
+
+The Modern Evaluator's performance improvement in this demo comes from optimizing the **join operations** on large tables:
+- `Enriched_Sales_Analysis` joins 100K+ orders with 50K+ customers and weather data
+- Modern Evaluator uses intelligent algorithms to optimize how these large in-memory joins execute
+- It leverages .NET Core 8 performance improvements, better parallelization, and smarter join strategies
+
+**Bottom Line:** Even though CSVs don't fold, this demo still demonstrates real performance gains from the Modern Evaluator's optimization of complex transformations and joins on large datasets.
+
+---
+
 ## Run a Full Refresh Test
 
 ### Test 1: Baseline (Legacy Engine)
